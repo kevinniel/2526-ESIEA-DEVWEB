@@ -16,32 +16,208 @@ Ce TP est **évolutif** : chaque nouvelle notion vue en cours doit être intégr
 
 ---
 
-## 🧱 Contexte fonctionnel
+## 🧱 Contexte fonctionnel détaillé
 
-L’application permet à une société de gérer les demandes (tickets) de ses clients.
+L’application à développer est un **outil de gestion de ticketing** utilisé par une société de services (ESN, agence web, société de conseil, etc.) afin de gérer les demandes de ses clients, le temps passé par les collaborateurs et la facturation associée.
 
-Chaque client possède :
-- un ou plusieurs **projets**
-- un **contrat** incluant un certain nombre d’heures
-
-Les collaborateurs peuvent :
-- créer et traiter des tickets
-- enregistrer le **temps passé**
-- indiquer si un ticket est inclus dans le contrat ou facturable en supplément
-
-Les clients peuvent :
-- consulter leurs tickets
-- **valider les tickets facturables** avant facturation
+L’objectif est de **centraliser l’ensemble des échanges, du suivi et de la validation**, depuis la création d’un ticket jusqu’à sa facturation.
 
 ---
 
-## 👥 Rôles utilisateurs
+### 🏢 Clients
 
-| Rôle | Description |
-|---|---|
-| Administrateur | Gère les utilisateurs, clients, projets et contrats |
-| Collaborateur | Crée et traite les tickets, saisit le temps |
-| Client | Consulte ses tickets et valide les tickets facturables |
+Un **client** représente une entreprise ou une organisation faisant appel aux services de la société.
+
+Pour chaque client, l’application doit permettre de :
+- consulter ses projets
+- consulter les tickets liés à ses projets
+- suivre l’état des tickets (ouverts, en cours, terminés, à valider)
+- valider ou refuser les tickets facturables
+
+Un client ne peut **voir et agir que sur ses propres données**.
+
+---
+
+### 📁 Projets
+
+Un **projet** appartient obligatoirement à un client.
+
+Un projet permet de :
+- regrouper les tickets par contexte fonctionnel ou technique
+- définir un cadre contractuel clair
+
+Pour chaque projet, on doit pouvoir :
+- associer un ou plusieurs collaborateurs
+- rattacher un contrat (ou une enveloppe d’heures)
+- consulter la liste des tickets liés au projet
+
+---
+
+### 📄 Contrats & gestion des heures
+
+Chaque projet est associé à un **contrat** définissant :
+- un nombre d’heures incluses (ex : 50h / an)
+- une période de validité (optionnelle)
+- un taux horaire pour les heures supplémentaires
+
+Le système doit permettre :
+- de calculer le **temps consommé**
+- d’identifier les **heures restantes**
+- de distinguer :
+  - les tickets inclus dans le contrat
+  - les tickets facturables en supplément
+
+Une fois les heures incluses épuisées :
+- les nouveaux tickets peuvent être automatiquement marqués comme **facturables**
+- ou laissés au choix du collaborateur (selon implémentation)
+
+---
+
+### 🎫 Tickets
+
+Un **ticket** représente une demande faite par un client sur un projet donné.
+
+Chaque ticket doit contenir au minimum :
+- un titre
+- une description détaillée
+- un statut
+- une priorité (optionnelle)
+- un type (inclus / facturable)
+- un temps estimé (optionnel)
+- un temps réel passé
+- un ou plusieurs collaborateurs assignés
+
+#### Statuts possibles (exemple)
+- Nouveau
+- En cours
+- En attente client
+- Terminé
+- À valider (client)
+- Validé
+- Refusé
+
+Le cycle de vie d’un ticket doit être clairement identifiable.
+
+---
+
+### ⏱️ Suivi du temps
+
+Les collaborateurs doivent pouvoir :
+- enregistrer le temps passé sur un ticket
+- ajouter plusieurs entrées de temps
+- associer chaque entrée à :
+  - une date
+  - une durée
+  - un commentaire (optionnel)
+
+Le système doit :
+- agréger automatiquement le temps passé par ticket
+- répercuter ce temps sur le contrat du projet
+- identifier les heures facturables
+
+---
+
+### 💰 Tickets inclus vs facturables
+
+Chaque ticket doit être clairement identifié comme :
+- **inclus dans le contrat**
+- ou **facturable en supplément**
+
+Les règles attendues :
+- un ticket inclus consomme les heures du contrat
+- un ticket facturable génère du temps à facturer
+- le passage en facturable peut être :
+  - automatique (contrat épuisé)
+  - manuel (décision du collaborateur ou administrateur)
+
+---
+
+### ✅ Validation client
+
+Les tickets **facturables** doivent obligatoirement passer par une **validation du client** avant facturation.
+
+Le client doit pouvoir :
+- consulter le détail du ticket
+- voir le temps passé
+- accepter ou refuser la facturation
+
+En cas de refus :
+- le ticket repasse dans un état spécifique
+- un commentaire peut être ajouté
+
+---
+
+## 👥 Rôles utilisateurs & responsabilités
+
+### 🔑 Administrateur
+
+L’administrateur dispose de **droits complets** sur l’application.
+
+Il peut :
+- gérer les utilisateurs (création, modification, rôles)
+- gérer les clients
+- créer et modifier les projets
+- définir les contrats et les enveloppes d’heures
+- consulter l’ensemble des tickets
+- forcer certains statuts si nécessaire
+
+---
+
+### 🧑‍💻 Collaborateur
+
+Le collaborateur est un utilisateur interne.
+
+Il peut :
+- consulter les projets auxquels il est assigné
+- créer des tickets pour un projet
+- modifier les tickets dont il est responsable
+- changer le statut des tickets
+- enregistrer le temps passé
+- indiquer si un ticket est inclus ou facturable
+
+Il ne peut pas :
+- gérer les contrats
+- voir les projets auxquels il n’est pas assigné
+- valider les tickets facturables
+
+---
+
+### 👤 Client
+
+Le client est un utilisateur externe avec des droits limités.
+
+Il peut :
+- consulter ses projets
+- consulter les tickets liés à ses projets
+- suivre l’état d’avancement
+- consulter le temps passé
+- valider ou refuser les tickets facturables
+
+Il ne peut pas :
+- créer ou modifier des tickets
+- voir les données d’autres clients
+- modifier les contrats ou projets
+
+---
+
+## 🔒 Contraintes générales
+
+- Chaque utilisateur doit être authentifié
+- Les droits d’accès doivent être respectés
+- Un utilisateur ne peut accéder qu’aux données autorisées par son rôle
+- Les actions critiques (validation, facturation) doivent être tracées
+
+---
+
+## 🎯 Attente pédagogique
+
+Ce contexte fonctionnel sert de **référence unique** pour tout le module.
+
+Les choix techniques (HTML, JS, PHP, SQL, Laravel, API) doivent toujours être justifiés par :
+- un besoin fonctionnel réel
+- une logique métier cohérente
+
+L’objectif n’est pas de tout faire parfaitement, mais de **comprendre et implémenter une application web réaliste**, proche du monde professionnel.
 
 ---
 
