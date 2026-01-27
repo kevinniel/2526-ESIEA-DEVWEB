@@ -209,18 +209,6 @@ Il ne peut pas :
 
 ---
 
-## 🎯 Attente pédagogique
-
-Ce contexte fonctionnel sert de **référence unique** pour tout le module.
-
-Les choix techniques (HTML, JS, PHP, SQL, Laravel, API) doivent toujours être justifiés par :
-- un besoin fonctionnel réel
-- une logique métier cohérente
-
-L’objectif n’est pas de tout faire parfaitement, mais de **comprendre et implémenter une application web réaliste**, proche du monde professionnel.
-
----
-
 ## 🧵 Organisation du TP
 
 - Le TP est **unique** et évolue tout au long du module
@@ -230,8 +218,7 @@ L’objectif n’est pas de tout faire parfaitement, mais de **comprendre et imp
 
 ---
 
-# 📌 ÉTAPE 1 — HTML / CSS  
-📅 Début du module (janvier)
+# 📌 ÉTAPE 1 — HTML / CSS - jusqu'au 5 Février 2026
 
 ## 🎯 Objectifs pédagogiques
 - Structurer une interface web
@@ -249,11 +236,13 @@ Créer les pages **statiques** suivantes :
 - Détail d’un ticket
 - Formulaire de création de ticket
 
+Imaginer en plus toutes les autres pages qui vous paraissent nécessaires et pertinentes pour la réalisation du projet, et les réaliser.
+
 ### Contraintes
 - HTML sémantique
 - CSS propre (Flexbox)
 - Responsive minimum
-- Pas de JavaScript à ce stade
+- Validation du HTML avec le W3C
 
 ## 📦 Livrable
 - Dossier contenant les pages HTML/CSS
@@ -261,7 +250,7 @@ Créer les pages **statiques** suivantes :
 
 ---
 
-# 📌 ÉTAPE 2 — JavaScript (journée intensive du 6 février)
+# 📌 ÉTAPE 2 — JavaScript - jusqu'au 8 Février 2026
 
 ## 🎯 Objectifs pédagogiques
 - Ajouter de l’interactivité
@@ -275,7 +264,6 @@ Ajouter du **JavaScript natif** pour :
 - Validation des formulaires de création de ticket
 - Affichage dynamique :
   - ticket inclus / ticket facturable
-- Ajout dynamique de temps passé sur un ticket
 - Affichage de messages d’erreur ou de succès
 - Interactions sans rechargement (UI uniquement)
 
@@ -290,8 +278,9 @@ Ajouter du **JavaScript natif** pour :
 
 ---
 
-# 📌 ÉTAPE 3 — PHP (traitement serveur)  
-📅 13 février
+# 📌 ÉTAPE 3 — PHP  - jusqu'au 10 Mars 2026
+
+⚠️ Vous devez initialiser un nouveau repository GIT à partir d'ici en repartant de la base que vous avez déjà réalisé jusqu'ici.
 
 ## 🎯 Objectifs pédagogiques
 - Comprendre le fonctionnement du back-end
@@ -311,14 +300,17 @@ Passer l’application en **PHP procédural** :
 - Séparation logique / affichage
 - Sécurisation minimale (`htmlspecialchars`)
 
+### Optionnel 
+- tout passer en PHP Orienté Objet
+- Intégratio d'un autoloader avec composer par exemple
+
 ## 📦 Livrable
 - Application PHP fonctionnelle
 - Données traitées côté serveur
 
 ---
 
-# 📌 ÉTAPE 4 — SQL & Base de données  
-📅 11 mars
+# 📌 ÉTAPE 4 — SQL & Base de données - jusqu'au 10 Mars 2026
 
 ## 🎯 Objectifs pédagogiques
 - Persister les données
@@ -337,7 +329,6 @@ Créer une base de données permettant de gérer :
 
 ### Fonctionnalités attendues
 - Création / lecture des tickets depuis la BDD
-- Calcul du temps consommé
 - Distinction :
   - tickets inclus
   - tickets facturables
@@ -349,12 +340,12 @@ Créer une base de données permettant de gérer :
 
 ## 📦 Livrable
 - Schéma de base de données
-- Application PHP connectée à la BDD
+- Script de création de la base de données
+- Application PHP connectée à la BDD et fonctionnelle
 
 ---
 
-# 📌 ÉTAPE 5 — Laravel (bases)  
-📅 13 mars
+# 📌 ÉTAPE 5 — Laravel (bases) - jusqu'au 10 Avril - 12h
 
 ## 🎯 Objectifs pédagogiques
 - Structurer une application moderne
@@ -381,8 +372,7 @@ Migrer l’application vers **Laravel** :
 
 ---
 
-# 📌 ÉTAPE 6 — Laravel + BDD (CRUD)  
-📅 18 mars
+# 📌 ÉTAPE 6 — Laravel + BDD (CRUD) - jusqu'au 10 Avril - 12h
 
 ## 🎯 Objectifs pédagogiques
 - Utiliser l’ORM Eloquent
@@ -405,7 +395,7 @@ Ajouter :
 
 ---
 
-# 📌 ÉTAPE 7 — API REST (2 séances)
+# 📌 ÉTAPE 7 — API REST (2 séances) - jusqu'au 10 Avril - 12h
 
 ## 🎯 Objectifs pédagogiques
 - Comprendre l’architecture API
@@ -427,8 +417,7 @@ Ajouter :
 
 ---
 
-# 📌 ÉTAPE 8 — TP FINAL & amélioration  
-📅 Fin mars
+# 📌 ÉTAPE 8 — TP FINAL & amélioration - jusqu'au 10 Avril - 12h  
 
 ## 🎯 Objectifs pédagogiques
 - Consolider les acquis
@@ -457,8 +446,3 @@ Ajouter :
 - Respect des concepts vus en cours
 - Autonomie et progression
 - Clarté du rendu final
-
----
-
-Bon travail 🚀  
-Ce TP vous accompagne sur **tout le module** et reflète un **cas réel du monde professionnel**.
