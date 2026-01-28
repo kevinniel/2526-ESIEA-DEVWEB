@@ -1,0 +1,39 @@
+/* plusieurs sélecteurs séparés apr des virgules */
+h1, h2, h3, h4 {
+    font-family: "Bitcount Single", arial;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* uniquement les ul dans les balises nav */
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav a {
+    color: red;
+}
+
+
+/* RWD = Responsive Web Design */
+@media screen and (max-width: 600px) {
+    header {
+        text-align: center;
+        display: block;
+    }
+    nav ul {
+        justify-content: center;
+    }
+
+    nav a {
+        color: green;
+    }
+}

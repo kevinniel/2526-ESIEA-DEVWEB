@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ESIEA</title>
+        <!-- j'inclu du CSS avec des styles -->
+        <style>
+            /* 
+            
+            de manière schématique : 
+
+            selecteur {
+                propriété : valeur;
+                propriété : valeur;
+                propriété : valeur;
+            }
+
+            */
+
+            div {
+                color: red;
+            }
+
+            span {
+                color: green;
+            }
+
+            /* sélecteur de classe */
+            .chaussette {
+                color: yellow;
+            }
+            
+            div.chaussette {
+                color: purple;
+            }
+
+            /* sélecteur d'id */
+            #blog1, #blog2 {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Balise de type "block" -->
+        <div class="chaussette">Coucou</div>
+        <div>COUCOU</div>
+        <div>COUCOU</div>
+        <div>COUCOU</div>
+        <div>COUCOU</div>
+        <div>COUCOU</div>
+        <div>COUCOU</div>
+        <!-- balise de type "inline" -->
+        <span>TATA TATA TATA TATA TATA TATA TATA TATA </span>
+        <span>TATA TATA TATA TATA TATA TATA TATA TATA </span>
+        <span>TATA TATA TATA TATA TATA TATA TATA TATA </span>
+        <span>TATA TATA TATA TATA TATA TATA TATA TATA </span>
+        <!-- balises sémantiques -->
+        <!-- sémantiques de type "bloc" -->
+        <!-- représente le haut d'un élément -->
+        <header class="chaussette">mon header</header>
+        <!-- représente le bas d'un élément -->
+        <footer>mon footer</footer>
+        <!-- représente un partie globale -->
+        <section>ma section</section>
+        <!-- représente la partie principale d'une section -->
+        <article id="blog1">mon article</article>
+        <!-- représente la partie "du côté" d'une section -->
+        <aside id="blog2">mon aside</aside>
+        <!-- TITRES -->
+        <h1>Titre 1</h1>
+        <h2>Titre 2</h2>
+        <h3>Titre 3</h3>
+        <h4>Titre 4</h4>
+        <h5>Titre 5</h5>
+        <h6>Titre 6</h6>
+        <!-- listes à puce (non ordonnées) -->
+        <!-- UL = Unordered List -->
+        <!-- LI = List Item -->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- listes à numéros (ordonnées) -->
+        <!-- OL = Ordered List -->
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <!-- paragraphes -->
+        <p></p>
+        <!-- Tableaux -->
+        <table>
+            <!-- entete du tableau -->
+            <thead>
+                <!-- ligne -->
+                <tr>
+                    <!-- cellule de titre -->
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <!-- corp du tableau -->
+            <tbody>
+                <tr>
+                    <!-- cellule de base -->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <!-- pied du tableau -->
+            <tfoot>
+                <!-- a vérifier -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- sémantiques de type "inline" -->
+        <!-- lien -->
+        <a></a>
+    </body>
+</html>
