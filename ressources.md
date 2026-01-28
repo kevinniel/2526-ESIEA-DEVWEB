@@ -27,6 +27,14 @@ Ce document regroupe **les meilleures ressources** pour apprendre et réviser le
   https://grafikart.fr/formations/html-css  
   👉 Vidéos claires et progressives.
 
+- **CSS TRICKS – Flexbox**
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  👉 Explications simples et complètes du flexbox
+
+- **Flexbox Froggy – Flexbox**
+  https://flexboxfroggy.com/#fr
+  👉 Pratique & compréhension du flexbox de manière ludique
+
 ---
 
 ## ⚡ JavaScript – Bases & DOM
