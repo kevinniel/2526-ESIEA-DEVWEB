@@ -236,6 +236,15 @@ Créer les pages **statiques** suivantes :
 - Détail d’un ticket
 - Formulaire de création de ticket
 
+Pages optionnelles (mais bienvenues 😇) : 
+- Page d'inscription
+- Mot de passe perdu
+- Profil utilisateur
+- Paramètres
+- Détail d'un projet
+- Création + Edition d'un projet (formulaire)
+
+
 Imaginer en plus toutes les autres pages qui vous paraissent nécessaires et pertinentes pour la réalisation du projet, et les réaliser.
 
 ### Contraintes
