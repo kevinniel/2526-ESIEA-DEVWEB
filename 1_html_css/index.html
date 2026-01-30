@@ -95,6 +95,30 @@
         </div>
     </section>
 
+    <style>
+        header {position: fixed; top: 0; left: 0; right: 100px; background-color: yellow; transition: all 0.4s ease; z-index: 0; }
+        header:hover {right: 200px;}
+        .pos {background-color: red; width: 1500px; height: 500px; margin: 500px auto; position: relative;}
+        .pos div {width: 100px; height: 100px; border: 3px solid black;}
+        .pos div div {width: 25px; height: 25px;}
+        div.un {background-color: green; position: relative;}
+        div.deux {background-color: aqua;}
+        div.trois {background-color: purple;}
+        div.a {background-color: black; position: absolute; top: 0; right: 0;}
+        div.b {background-color: white;}
+    </style>
+
+    <section class="pos">
+        <div class="un">
+            <div class="a"></div>
+            <div class="b"></div>
+        </div>
+        <div class="deux"></div>
+        <div class="trois"></div>
+    </section>
+
+
+
     <footer>
         © Kévin NIEL 
     </footer>
