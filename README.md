@@ -1,5 +1,7 @@
 # 🎓 Développement Web — Cours & TP Fil Rouge
 
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeeM4gmxCxNXwvwsPtDKE5ceLAZpPNNUdUrtbhRSZu56RWNew/viewform?usp=dialog">LIEN QCM</a>
+
 Bienvenue dans le repository officiel du module **Développement Web**.
 
 Ce dépôt centralise **l’ensemble des supports**, **ressources**, **consignes** et **travaux pratiques** utilisés tout au long de la formation.
