@@ -1,16 +1,6 @@
 
-:root {
-    --bg: #f7f3ed;
-    --ink: #1f1b16;
-    --muted: #6b6359;
-    --accent: #c65a2a;
-    --card: #fffaf3;
-    --line: #e6d9c8;
-    --shadow: 0 10px 30px rgba(31, 27, 22, 0.12);
-    --radius: 14px;
-    --display: "Fraunces", "Iowan Old Style", "Palatino", "Times New Roman", serif;
-    --sans: "Work Sans", "Avenir Next", "Segoe UI", system-ui, sans-serif;
-}
+/* variables */
+@import url('variables.css');
 
 .titanic {
     display: none !important;

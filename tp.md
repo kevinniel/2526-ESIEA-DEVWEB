@@ -236,7 +236,7 @@ Créer les pages **statiques** suivantes :
 - Détail d’un ticket
 - Formulaire de création de ticket
 
-Pages optionnelles (mais bienvenues 😇) : 
+Pages (plus vraiment optionnelles) supplémentaires : 
 - Page d'inscription
 - Mot de passe perdu
 - Profil utilisateur
