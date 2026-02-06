@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Films - Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div>
+                <h1>Catalogue de films</h1>
+                <div class="subtitle">Une sélection courte et élégante, prête à être enrichie par de nouveaux titres.</div>
+            </div>
+            <span class="badge">Sélection 2026</span>
+        </header>
+
+        <section class="grid">
+            <div class="card">
+                <div class="filters-title">Filtres</div>
+                <div class="filters" aria-label="Filtres par genre">
+                    <button class="filter-btn" type="button">Drame</button>
+                    <button class="filter-btn" type="button">Science-fiction</button>
+                    <button class="filter-btn" type="button">Comédie</button>
+                    <button class="filter-btn" type="button">Thriller</button>
+                </div>
+                <table id="content" aria-label="Tableau des films">
+                    <caption>Films en vitrine</caption>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Genre</th>
+                            <th>Année</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dune</td>
+                            <td class="genre">Science-fiction</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr>
+                            <td>La La Land</td>
+                            <td class="genre">Drame</td>
+                            <td>2016</td>
+                        </tr>
+                        <tr>
+                            <td>Le Fabuleux Destin d'Amélie Poulain</td>
+                            <td class="genre">Comédie</td>
+                            <td>2001</td>
+                        </tr>
+                        <tr>
+                            <td>Parasite</td>
+                            <td class="genre">Thriller</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td>Interstellar</td>
+                            <td class="genre">Science-fiction</td>
+                            <td>2014</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <form id="submitform" action="" method="POST">
+                    <div class="field">
+                        <label for="titre">Nom du film</label>
+                        <input id="titre" name="titre" type="text" placeholder="Ex. Inception" />
+                        <div id="titre_error" class="error-text titanic">Le nom du film est obligatoire.</div>
+                    </div>
+                    <div class="two">
+                        <div class="field">
+                            <label for="annee">Année</label>
+                            <input id="annee" name="annee" type="number" placeholder="Ex. 2010" />
+                            <div id="annee_error" class="error-text titanic">Merci de saisir une année valide.</div>
+                        </div>
+                        <div class="field">
+                        <label for="genre">Genre</label>
+                        <select id="genre" name="genre">
+                            <option>Drame</option>
+                            <option>Science-fiction</option>
+                            <option>Comédie</option>
+                            <option>Thriller</option>
+                        </select>
+                        <div id="genre_error" class="error-text titanic">Merci de choisir un genre.</div>
+                        </div>
+                    </div>
+                    <button type="submit">Ajouter le film</button>
+                    <div class="note">Formulaire non fonctionnel, uniquement pour la maquette HTML/CSS.</div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div id="success" class="toast titanic" role="status" aria-live="polite">
+        <span class="toast-dot" aria-hidden="true"></span>
+        Film ajouté avec succès.
+    </div>
+    <!-- Normalement, on intègre le JS ICI -->
+    <script>
+        console.log("coucou tout le monde !");
+        let a = 3;
+        let b = 4;
+        console.log(a+b);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
