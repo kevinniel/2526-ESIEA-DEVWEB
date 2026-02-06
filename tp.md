@@ -272,9 +272,8 @@ Ajouter du **JavaScript natif** pour :
 
 - Validation des formulaires de création de ticket
 - Affichage dynamique :
-  - ticket inclus / ticket facturable
+  - ticket inclus / ticket facturable (= filtres comme pour les genres dans l'exemple du cours)
 - Affichage de messages d’erreur ou de succès
-- Interactions sans rechargement (UI uniquement)
 
 ### Contraintes
 - JavaScript natif uniquement
