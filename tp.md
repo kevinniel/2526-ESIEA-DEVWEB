@@ -299,7 +299,6 @@ Ajouter du **JavaScript natif** pour :
 Passer l’application en **PHP procédural** :
 
 - Traitement des formulaires côté serveur
-- Création de tickets côté PHP
 - Affichage dynamique des tickets (à partir d'un tableau PHP)
 
 ### Contraintes
