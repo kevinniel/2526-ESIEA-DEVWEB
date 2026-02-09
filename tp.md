@@ -286,7 +286,7 @@ Ajouter du **JavaScript natif** pour :
 
 ---
 
-# 📌 ÉTAPE 3 — PHP  - jusqu'au 10 Mars 2026
+# 📌 ÉTAPE 3 — PHP  - jusqu'au 12 Février 2026
 
 ⚠️ Vous devez initialiser un nouveau repository GIT à partir d'ici en repartant de la base que vous avez déjà réalisé jusqu'ici.
 
@@ -301,7 +301,6 @@ Passer l’application en **PHP procédural** :
 - Traitement des formulaires côté serveur
 - Création de tickets côté PHP
 - Affichage dynamique des tickets
-- Gestion simple des utilisateurs (sans authentification avancée)
 
 ### Contraintes
 - PHP procédural
@@ -310,10 +309,10 @@ Passer l’application en **PHP procédural** :
 
 ### Optionnel 
 - tout passer en PHP Orienté Objet
-- Intégratio d'un autoloader avec composer par exemple
+- Intégration d'un autoloader avec composer par exemple
 
 ## 📦 Livrable
-- Application PHP fonctionnelle
+- Application PHP fonctionnelle (sans persistance de données)
 - Données traitées côté serveur
 
 ---
