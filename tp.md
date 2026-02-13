@@ -345,8 +345,6 @@ Créer une base de données permettant de gérer :
 - Relations simples entre tables
 
 ## 📦 Livrable
-- Schéma de base de données
-- Script de création de la base de données
 - Application PHP connectée à la BDD et fonctionnelle
 
 ---
