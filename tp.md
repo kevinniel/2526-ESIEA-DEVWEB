@@ -349,7 +349,7 @@ Créer une base de données permettant de gérer :
 
 ---
 
-# 📌 ÉTAPE 5 — Laravel (bases) - jusqu'au 10 Avril - 12h
+# 📌 ÉTAPE 5 — Laravel (bases) - jusqu'au 13 Mars
 
 ## 🎯 Objectifs pédagogiques
 - Structurer une application moderne
