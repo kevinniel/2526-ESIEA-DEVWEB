@@ -357,6 +357,18 @@ Créer une base de données permettant de gérer :
 
 ## 🧪 Travail demandé
 
+⚠️ IMPORTANT
+⚠️ IMPORTANT
+⚠️ IMPORTANT
+
+1. Envoyer le lien de votre repo git du projet qui était à réaliser pour aujourd'hui sur cette url : https://docs.google.com/forms/d/e/1FAIpQLSdBAeDlpLw452NtqUQphA1FO8AIdxcqhAQbciUbvVNqfmoLbw/viewform?usp=publish-editor
+
+2. Créez un nouveau repository pour le projet Laravel
+
+⚠️ IMPORTANT
+⚠️ IMPORTANT
+⚠️ IMPORTANT
+
 Migrer l’application vers **Laravel** :
 
 - Mise en place du projet Laravel
@@ -368,10 +380,10 @@ Migrer l’application vers **Laravel** :
 ### Contraintes
 - Respect du MVC
 - Code structuré
-- Pas encore de BDD complexe
+- Pas encore de BDD
 
 ## 📦 Livrable
-- Application Laravel fonctionnelle
+- Application Laravel navigable et non fonctionnelle (pas de persistence de données)
 - Navigation propre
 
 ---
