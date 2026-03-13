@@ -349,7 +349,7 @@ Créer une base de données permettant de gérer :
 
 ---
 
-# 📌 ÉTAPE 5 — Laravel (bases) - jusqu'au 13 Mars
+# 📌 ÉTAPE 5 — Laravel (bases) - jusqu'au 1O Avril - 12h
 
 ## 🎯 Objectifs pédagogiques
 - Structurer une application moderne
@@ -391,8 +391,8 @@ Migrer l’application vers **Laravel** :
 # 📌 ÉTAPE 6 — Laravel + BDD (CRUD) - jusqu'au 10 Avril - 12h
 
 ## 🎯 Objectifs pédagogiques
-- Utiliser l’ORM Eloquent
-- Implémenter un CRUD complet
+  - Utiliser l’ORM Eloquent
+  - Implémenter un CRUD complet
 
 ## 🧪 Travail demandé
 

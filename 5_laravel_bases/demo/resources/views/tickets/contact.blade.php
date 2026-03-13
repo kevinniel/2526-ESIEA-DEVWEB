@@ -21,6 +21,19 @@
     </header>
     <h1>CONTACT</h1>
 
+
+    <ul>
+        <li>
+            nom : {{ $user->name }}
+        </li>
+        <li>
+            email : {{ $user->email }}
+        </li>
+    </ul>
+
+    {{ dd($user->tickets) }}
+
+
     <footer>
         © Kévin NIEL wtf design 2026
     </footer>
