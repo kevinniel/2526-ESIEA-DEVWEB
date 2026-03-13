@@ -2,9 +2,14 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TicketController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/', function (Request $request) {
+    if (config('demo.enabled') && $request->getHost() === config('demo.host')) {
+        return redirect()->route('login');
+    }
+
     return view('welcome');
 });
 
