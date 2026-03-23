@@ -34,6 +34,33 @@ class TicketController extends Controller
         return redirect()->route('tickets.index');
     }
 
+    public function storeApi(Request $request)
+    {
+        $validated = $request->validate([
+            'user_id' => ['required', 'integer', 'exists:users,id'],
+            'title' => ['required', 'string', 'max:255'],
+        ]);
+
+        $ticket = Ticket::create([
+            'user_id' => $validated['user_id'],
+            'title' => $validated['title'],
+        ]);
+
+        $user = User::find($validated['user_id']);
+
+        return response()->json([
+            'message' => 'Ticket ajoute avec succes.',
+            'ticket' => [
+                'id' => $ticket->id,
+                'title' => $ticket->title,
+                'user_name' => $user->name,
+                'show_url' => route('tickets.show', $ticket->id),
+                'edit_url' => route('tickets.edit', $ticket->id),
+                'destroy_url' => route('tickets.destroy'),
+            ],
+        ], 201);
+    }
+
     public function show($id)
     {
         $ticket = Ticket::find($id);

@@ -349,7 +349,7 @@ Créer une base de données permettant de gérer :
 
 ---
 
-# 📌 ÉTAPE 5 — Laravel (bases) - jusqu'au 1O Avril - 12h
+# 📌 ÉTAPE 5 — Laravel (bases) - jusqu'au 1O Avril - 8h45
 
 ## 🎯 Objectifs pédagogiques
 - Structurer une application moderne
@@ -388,7 +388,7 @@ Migrer l’application vers **Laravel** :
 
 ---
 
-# 📌 ÉTAPE 6 — Laravel + BDD (CRUD) - jusqu'au 10 Avril - 12h
+# 📌 ÉTAPE 6 — Laravel + BDD (CRUD) - jusqu'au 10 Avril - 8h45
 
 ## 🎯 Objectifs pédagogiques
   - Utiliser l’ORM Eloquent
@@ -411,29 +411,25 @@ Ajouter :
 
 ---
 
-# 📌 ÉTAPE 7 — API REST (2 séances) - jusqu'au 10 Avril - 12h
-
-## 🎯 Objectifs pédagogiques
-- Comprendre l’architecture API
-- Séparer front et back
+# 📌 ÉTAPE 7 — API REST (2 séances) - jusqu'au 10 Avril - 8h45
 
 ### API – séance 1
 - Création de routes API
 - Retour JSON
 - GET / POST sur les tickets
-
-### API – séance 2
 - Consommation de l’API en JavaScript (`fetch`)
 - Ajout de tickets sans rechargement
 - Affichage dynamique depuis l’API
 
+⚠️ OBLIGATOIRE : Au moins 1 route API, avec l'exploitation de cette route dans votre projet en JS avec la méthode `fetch()`
+
 ## 📦 Livrable
-- API REST fonctionnelle
+- API fonctionnelle
 - Front JS connecté à l’API
 
 ---
 
-# 📌 ÉTAPE 8 — TP FINAL & amélioration - jusqu'au 10 Avril - 12h  
+# 📌 ÉTAPE 8 — TP FINAL & amélioration - jusqu'au 10 Avril - 8h45  
 
 ## 🎯 Objectifs pédagogiques
 - Consolider les acquis
