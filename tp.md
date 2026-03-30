@@ -422,6 +422,7 @@ Ajouter :
 - Affichage dynamique depuis l’API
 
 ⚠️ OBLIGATOIRE : Au moins 1 route API, avec l'exploitation de cette route dans votre projet en JS avec la méthode `fetch()`
+⚠️ ATTENTION : Pour les besoins de connexion, et d'authentification des requêtes sur la partie API, vous pouvez utiliser `SANCTUM`
 
 ## 📦 Livrable
 - API fonctionnelle
